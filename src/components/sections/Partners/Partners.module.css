@@ -1,0 +1,70 @@
+/* Figma: "Group 33731" — 1058×146, centered in the 1218 column */
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  width: 100%;
+  max-width: 1058px;
+  margin: 0 auto;
+  background: var(--color-white);
+  isolation: isolate;
+}
+
+.title {
+  color: var(--color-light-900);
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.44px;
+  text-align: center;
+}
+
+/* "Frame 1000002775" — horizontal, gap 162, items 143×75 */
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 143px;
+  height: 75px;
+}
+
+/* Logos use the "Luminosity" layer blend over white, which renders them in grayscale. */
+.logo {
+  position: relative;
+  display: block;
+  flex: none;
+  overflow: hidden;
+  mix-blend-mode: luminosity;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none;
+}
+
+@media (max-width: 767px) {
+  .list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 32px;
+  }
+
+  .item {
+    width: calc(50% - 16px);
+  }
+}

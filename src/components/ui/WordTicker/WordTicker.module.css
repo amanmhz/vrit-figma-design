@@ -1,0 +1,28 @@
+.ticker {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 337px;
+  max-width: 100%;
+}
+
+.slot {
+  position: relative;
+  overflow: hidden;
+  flex: none;
+}
+
+.word {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  color: var(--color-light-900);
+  font-family: var(--font-oakes);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.52px;
+  white-space: nowrap;
+}

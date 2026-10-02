@@ -1,0 +1,33 @@
+:root {
+  /* Colors (from Figma variables & styles) */
+  --color-white: #ffffff;
+  --color-light-50: #fafafa;
+  --color-light-800: #262626;
+  --color-light-900: #171717;
+  --color-black-900: #2b2b2b;
+  --color-text-muted: #414141;
+
+  --color-primary-main: #1253ed;
+  --color-primary-dark: #013ecf;
+  --color-focus-ring: #b8ccfd;
+
+  --color-brand-red: #c33241;
+  --color-brand-red-50: #f9ebec;
+  --color-brand-green: #1da077;
+
+  --color-surface-placeholder: #e1e1e1;
+  --color-surface-placeholder-alt: #f5f5f5;
+  --color-track: #ededed;
+  --color-track-thumb: #cfcfcf;
+  --color-drag: #d9d9d9;
+
+  /* Typography */
+  --font-oakes: 'Oakes Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-nohemi: 'Nohemi', 'Helvetica Neue', Arial, sans-serif;
+  --font-manrope: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  --font-outfit: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Layout */
+  --page-gutter: clamp(16px, 7.78vw, 112px);
+  --content-max: 1218px;
+}

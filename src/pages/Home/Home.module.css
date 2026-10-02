@@ -1,0 +1,29 @@
+/* Figma: "Frame 1000002781" — vertical, gap 193 */
+.servicesStack {
+  display: flex;
+  flex-direction: column;
+  gap: 193px;
+}
+
+/* Figma: "stats" wrapper — vertical, gap 48 */
+.coursesStack {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (max-width: 1023px) {
+  .servicesStack {
+    gap: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .servicesStack {
+    gap: 80px;
+  }
+
+  .coursesStack {
+    gap: 64px;
+  }
+}

@@ -1,0 +1,38 @@
+/* Figma: "text" — vertical, gap 20 */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eyebrow {
+  color: var(--color-text-muted);
+  font-family: var(--font-outfit);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.heading {
+  color: var(--color-black-900);
+  font-family: var(--font-nohemi);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.highlight {
+  color: var(--color-brand-green);
+}
+
+@media (max-width: 767px) {
+  .eyebrow {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .heading {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

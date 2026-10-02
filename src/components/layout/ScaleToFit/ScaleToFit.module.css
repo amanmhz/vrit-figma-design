@@ -1,0 +1,29 @@
+.outer {
+  position: relative;
+  width: 100%;
+}
+
+.outer[data-overflow] {
+  /* Swipe horizontally; extra top room keeps the "Click me!" hint visible. */
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: -56px;
+  padding-top: 56px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.outer[data-overflow]::-webkit-scrollbar {
+  display: none;
+}
+
+.sizer {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+}

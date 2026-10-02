@@ -1,0 +1,100 @@
+/* Figma: "Frame 1000002780" — vertical, gap 59 */
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+}
+
+.viewport {
+  position: relative;
+  width: calc(100% + var(--bleed, 0px));
+  overflow: hidden;
+  outline: none;
+  touch-action: pan-y;
+}
+
+.viewport:focus-visible {
+  box-shadow: inset 0 0 0 3px var(--color-focus-ring);
+  border-radius: 21.2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .viewport {
+    cursor: none;
+  }
+}
+
+/* "Frame 1000002777" — horizontal, gap 20, scroll direction horizontal */
+.track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* "Rectangle 264–267" — 1012×569.25, radius 21.21 */
+.slide {
+  flex: none;
+  width: min(1012px, 82vw);
+  aspect-ratio: 1012 / 569.25;
+  border-radius: 21.2076px;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* "Group 33732" — 132px circle with "Drag" label */
+.dragBubble {
+  position: absolute;
+  top: -66px;
+  left: -66px;
+  display: grid;
+  place-items: center;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: var(--color-drag);
+  color: var(--color-light-800);
+  font-family: var(--font-manrope);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+/* "Group 34095" — 1218×7 track with a 292.54 thumb */
+.progress {
+  position: relative;
+  height: 7px;
+  border-radius: 50px;
+  background: var(--color-track);
+  overflow: hidden;
+}
+
+.thumb {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 50px;
+  background: var(--color-track-thumb);
+}
+
+@media (max-width: 767px) {
+  .carousel {
+    gap: 32px;
+  }
+
+  .dragBubble {
+    width: 88px;
+    height: 88px;
+    top: -44px;
+    left: -44px;
+    font-size: 14px;
+  }
+}

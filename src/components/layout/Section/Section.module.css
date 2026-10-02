@@ -1,0 +1,18 @@
+.section {
+  position: relative;
+  width: 100%;
+  padding: var(--section-padding-block) var(--page-gutter);
+  background: var(--color-white);
+}
+
+/* Figma's "service" frame overflows its 112px gutters by 2px (112 + 1218 + 112 = 1442). */
+.inner {
+  width: min(var(--section-max-width), calc(100% + 2px));
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-block: calc(var(--section-padding-block) * 0.5);
+  }
+}

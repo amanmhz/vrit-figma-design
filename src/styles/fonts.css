@@ -1,0 +1,29 @@
+/*
+ * Oakes Grotesk and Nohemi are not distributed by Figma, so these are subset
+ * fonts rebuilt from the glyph outlines, advances and kerning stored in the
+ * Figma file. They only contain the characters used in the design.
+ * Replace them with the licensed full fonts before adding new copy.
+ */
+@font-face {
+  font-family: 'Oakes Grotesk';
+  src: url('../assets/fonts/OakesGrotesk-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oakes Grotesk';
+  src: url('../assets/fonts/OakesGrotesk-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('../assets/fonts/Nohemi-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
